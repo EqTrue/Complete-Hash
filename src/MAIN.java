@@ -3,7 +3,7 @@ Warning, even super spec'd Gaming PC's will take a long time to loop an 8-bit HA
  */
 public class MAIN {
 
-    public static final int BIT_LEN = 8; // Change this value to your liking
+    public static final int BIT_LEN = 1; // Change this value to your liking
 
     /*
     MAIN
@@ -17,13 +17,21 @@ public class MAIN {
          */
         while (true) {
             System.out.println(key);
-            increment(key, 0);
+            increment(key);
         }
 
     }
 
     /*
+    Wrapper, so to allow passing of index with recursive call
+     */
+    private static char[] increment(char[] key) {
+        return increment(key, 0);
+    }
+
+    /*
     Increments value at certain index. Values are from 0-Z, base 36 counting.
+    it is set up to go from 001... to 101... rather than 002...
      */
     private static char[] increment(char[] key, int index) {
         key[index] = (char) (++key[index] % 91); // Initial Increment
