@@ -34,6 +34,9 @@ public class MAIN {
          */
         if(key[index] == 58) key[index] = (char) (key[index]+ 7);
 
+        /*
+        If the char at index has been looped
+         */
         if(key[index] == 0) {
             key[index] = '0';
             increment(key, (++index)%BIT_LEN); // Increment next bit (RECURSIVE)
