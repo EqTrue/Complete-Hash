@@ -1,7 +1,4 @@
 version: 1
 
 reviewers:
-  natalie:
-    slack: vilenkin 
   EqTrue: {}
-  Stefan: "Stefan Decimelli"
