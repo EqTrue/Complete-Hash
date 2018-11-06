@@ -1,0 +1,6 @@
+version: 1
+
+reviewers:
+  natalie:
+    slack: vilenkin 
+  decimelli: {}
