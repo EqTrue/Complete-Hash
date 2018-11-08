@@ -2,3 +2,5 @@ version: 1
 
 reviewers:
   Test: {}
+  Stefan:
+    slack: "Stefan Decimelli"
